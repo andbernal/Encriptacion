@@ -1,0 +1,74 @@
+<!DOCTYPE html>;
+<html lang="es">;
+    <head>
+        <meta charset="uft-8">;
+        <title>Encriptador</title>;
+        <link rel="stylesheet" type="css" href="reset.css">
+        <link rel="stylesheet" href="style.css" />
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>
+                Herramienta de Encripción
+            </h1>
+         </div>
+
+         <div class="container">
+            <!-- instructions -->
+            <div class="instructions">
+              <h2>Instrucciones</h2>
+              <ul>
+                <li>Solo use caracteres en español.</li>
+                <li>Solo use letras minusculas.</li>
+              </ul>
+            </div>
+        <p id="error_message"></p>
+
+        <div>
+            <h1 id="textoEntrada">ESCRIBA EL TEXTO QUE DESEE CIFRAR/DESCIFRAR</h1>
+            
+            <form id="cifrador">
+                <div class ="grupo">
+                    <label for="input_text">Texto:</label>
+                    <input id="input_text" name="input_text"  type="text" placeholder="Ingrese el Texto" class="campo"         
+                    />
+                </div>
+            </form>
+            
+        </div>
+
+        
+
+        <div class="contenedorBotones">
+            <button id="botonEncriptacion">Encriptar</button>
+            <button id="botonDesencriptador">Desencriptar</button>
+        </div>
+
+        <h3 id="tituloResultado">MENSAJE CIFRADO/DESCIFRADO</h3>
+            <p id="textoResultado"></p>
+
+
+        <div id="contenedortextoSalida">
+
+            <p id="textoSalida">Texto Encriptado</p>
+            <div class="contenedorBotones_Salida">
+                <button id="botonCopiar">Copiar</button> 
+                <button id="botonClear">Limpiar</button>
+            </div>
+            <p id="mensaje_copiado">Copiado</p>
+
+        </div>
+        
+            
+            
+
+        <footer>
+            <p id="nombreFooter">Andres Bernal Ruiz</p>
+        </footer>
+        <script src="code.js"></script>
+          
+    </body>
+    
+</html>
+
